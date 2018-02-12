@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
+    # raise #=> to stop execution and play with variables and next steps in an irb like environnement
     if @question == "I am going to work"
       @answer = "Great!"
     elsif @question.include?("?")
